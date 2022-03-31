@@ -1,0 +1,65 @@
+/*
+ * Custom Colors
+ */
+
+$white: #fff;
+$black: #000;
+$fiord: #3f4362;
+$steel-gray-1: #1b1d2b;
+$steel-gray-2: #1c1e2c;
+$picton-blue: #3bbce2;
+$royal-blue: #3f70d7;
+$orange: #ff5216;
+
+$on-board-height: 350px;
+/**
+  * Font Imports
+  */
+
+@font-face {
+  font-family: "Mulish-Black";
+  src: url("../../assets/fonts/mulish/Mulish-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mulish-Black-Bold";
+  src: url("../../assets/fonts/mulish/Mulish-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mulish-Black-SemiBold";
+  src: url("../../assets/fonts/mulish/Mulish-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish-Regular";
+  src: url("../../assets/fonts/mulish/Mulish-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mulish-Black-Light";
+  src: url("../../assets/fonts/mulish/Mulish-Light.ttf") format("truetype");
+}
+
+/**
+  * Font Types
+  */
+$font-types: (
+  type-on-board-title: (
+    font: 24px "Mulish-Black-Bold",
+    letter-spacing: normal,
+    line-height: 30px
+  ),
+  type-on-board-sub-title: (
+    font: 16px "Mulish-Black-SemiBold",
+    letter-spacing: normal,
+    line-height: 30px
+  ),
+  type-button: (
+    font: 14px "Mulish-Black-Bold",
+    letter-spacing: normal,
+    line-height: 17.5px
+  )
+);
+
+//Spacing
+$spacer: 0.625rem !default; // 10px

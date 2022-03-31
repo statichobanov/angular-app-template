@@ -1,0 +1,25 @@
+<div class="on-board-main">
+  <div class="on-board-main_image-container">
+    <img src="../../../assets/on-boarding.png" class="image-container_img" />
+  </div>
+
+  <div class="on-board-main_content-container text-center p-4">
+    <h2 class="title">Discover other crypto users</h2>
+
+    <p-carousel
+      [value]="carouselContent"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]="2000"
+    >
+      <ng-template let-item pTemplate="item">
+        <h4 class="sub-title mt-3">{{item}}</h4>
+      </ng-template>
+    </p-carousel>
+
+    <div class="button-wrapper mt-3">
+      <button class="btn btn-primary">Next</button>
+    </div>
+  </div>
+</div>

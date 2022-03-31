@@ -1,0 +1,15 @@
+button {
+  &.btn {
+    height: 50px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    cursor: pointer;
+    @include font-type(type-button);
+
+    &.btn-primary {
+      background: linear-gradient(131.2deg, $picton-blue 5.14%, $royal-blue 98.95%);
+      color: $white;
+    }
+  }
+}

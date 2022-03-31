@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+ * 1. 3rd party libraries
+ */
+
+@import "~bootstrap/scss/bootstrap";
+
+/*
+ * 2. Configuration and helpers
+ */
+
+@import "styles/abstracts/variables";
+@import "styles/abstracts/mixins";
+
+/*
+ * 3. Global components
+ */
+@import "styles/abstracts/buttons";
+
+/*
+ * 4. Overrides
+ */
+@import "styles/overrides/primengOverrides";
+
+/*
+ * 5. Base css
+ */
+@import "styles/base";
