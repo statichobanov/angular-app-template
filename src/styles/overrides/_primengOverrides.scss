@@ -1,0 +1,14 @@
+.p-carousel .p-carousel-content .p-carousel-prev,
+.p-carousel .p-carousel-content .p-carousel-next {
+  display: none;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  border-radius: 10px !important;
+  width: 1rem !important;
+  height: 0.5rem !important;
+}
+
+.p-carousel .p-carousel-indicators {
+  padding: 10px !important;
+}

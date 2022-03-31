@@ -1,0 +1,41 @@
+@import "src/styles/abstracts/variables";
+@import "src/styles/abstracts/mixins";
+
+.on-board-main {
+  &_image-container {
+    height: calc(100vh - $on-board-height);
+
+    img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &_content-container {
+    position: absolute;
+    bottom: 0;
+    height: $on-board-height;
+    width: 100vw;
+    background: linear-gradient(180deg, $fiord 0%, $steel-gray-2 100%);
+    border-radius: 30px 30px 0px 0px;
+
+    .title {
+      margin-top: $spacer * 6;
+      @include font-type(type-on-board-title);
+    }
+
+    .sub-title {
+      @include font-type(type-on-board-sub-title);
+    }
+  }
+}
+/* .p-carousel-content .p-carousel-container {
+  .p-carousel-prev,
+  .p-carousel-next {
+    .p-ripple.p-element.p-carousel-next.p-link {
+      display: none !important;
+    }
+  }
+} */
