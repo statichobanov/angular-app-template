@@ -1,0 +1,32 @@
+<div class="sign-in_wrapper">
+  <div class="sign-in_wrapper_image-container">
+    <img src="../../../assets/profile.png" class="image-container_img" />
+  </div>
+
+  <form [formGroup]="signInForm" (ngSubmit)="submit()">
+    <div class="mb-3 form-group">
+      <label for="inputEmail" class="form-label required">Email</label>
+      <input type="email" class="form-control" id="inputEmail" formControlName="email" />
+    </div>
+
+    <!-- <span class="p-float-label">
+      <input class="w-100" formControlName="email" id="float-input" type="email" pInputText />
+      <label for="float-input">Email</label>
+    </span> -->
+
+    <div class="mb-3 form-group">
+      <label for="inputPassword" class="form-label required">Password</label>
+      <input
+        appTogglePassword
+        type="password"
+        class="form-control"
+        id="inputPassword"
+        formControlName="password"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!signInForm.valid">Sign in</button>
+  </form>
+
+  <app-countries-dropdown></app-countries-dropdown>
+</div>

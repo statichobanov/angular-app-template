@@ -11,11 +11,16 @@ $picton-blue: #3bbce2;
 $royal-blue: #3f70d7;
 $orange: #ff5216;
 
+/*
+ * Elements global sizes
+ */
 $on-board-height: 350px;
-/**
-  * Font Imports
-  */
+$main-border-radius: 16px;
+$input-field-height: 58px;
 
+/*
+ * Font Imports
+ */
 @font-face {
   font-family: "Mulish-Black";
   src: url("../../assets/fonts/mulish/Mulish-Black.ttf") format("truetype");
@@ -58,6 +63,11 @@ $font-types: (
     font: 14px "Mulish-Black-Bold",
     letter-spacing: normal,
     line-height: 17.5px
+  ),
+  type-input: (
+    font: 12px "Mulish-Regular",
+    letter-spacing: normal,
+    line-height: 15px
   )
 );
 

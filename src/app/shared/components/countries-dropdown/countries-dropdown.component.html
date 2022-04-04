@@ -1,0 +1,28 @@
+<div class="country-dropdown_wrapper">
+  <span class="country-dropdown_label">Choose Country</span>
+  <p-dropdown
+    [options]="countries"
+    [(ngModel)]="selectedCountry"
+    optionLabel="name"
+    [filter]="true"
+    filterBy="name"
+    [showClear]="true"
+    placeholder=" "
+    (onChange)="onCountrySelect(selectedCountry)"
+  >
+    <ng-template pTemplate="selectedItem">
+      <div class="country-item country-item-value" *ngIf="selectedCountry">
+        <span
+          [class]="'flag-icon selected flag-icon-' + selectedCountry.countryCode.toLowerCase()"
+        ></span>
+        <div>{{selectedCountry.name}}</div>
+      </div>
+    </ng-template>
+    <ng-template let-country pTemplate="item">
+      <div class="country-item">
+        <span [class]="'flag-icon flag-icon-' + country.countryCode.toLowerCase()"> </span>
+        <div>{{country.name}}</div>
+      </div>
+    </ng-template>
+  </p-dropdown>
+</div>

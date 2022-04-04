@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-/* import * as COUNTRIES from '../assets/data/countries-and-cities.json';
-import * as COUNTRY_CODES from '../assets/data/country-codes.json'; */
 
 @Component({
   selector: 'app-root',
@@ -9,12 +7,7 @@ import * as COUNTRY_CODES from '../assets/data/country-codes.json'; */
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  /* readonly COUNTRIES_AND_CITIES: any = COUNTRIES;
-  readonly COUNTRY_CODES: any = COUNTRY_CODES;
-  countries!: string[];
-  countryCodes!: string[]; */
-
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   public ngOnInit(): void {
     /*  this.countries = Object.keys(this.COUNTRIES_AND_CITIES);

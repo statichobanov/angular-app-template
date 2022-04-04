@@ -1,0 +1,38 @@
+@import "src/styles/abstracts/variables";
+@import "src/styles/abstracts/mixins";
+
+.country-dropdown {
+  &_wrapper {
+    @include font-type(type-input);
+  }
+  &_label {
+  }
+}
+:host ::ng-deep .p-dropdown {
+  width: 100%;
+  height: $input-field-height;
+  border-radius: $main-border-radius;
+
+  /* .p-dropdown-items-wrapper {
+    @include font-type(type-input);
+  } */
+
+  .p-dropdown-clear-icon {
+    right: 65px;
+  }
+
+  .flag-icon {
+    position: absolute;
+    top: 9px;
+    left: 333px;
+
+    &.selected {
+      top: 20px;
+    }
+  }
+
+  .flag-icon + div {
+    margin-left: 10px;
+    @include font-type(type-input);
+  }
+}
